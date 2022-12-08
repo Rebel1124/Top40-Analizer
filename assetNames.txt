@@ -1,0 +1,14 @@
+    #assetCodesList = ['ABG.JO', 'ARI.JO', 'ANG.JO', 'APN.JO', 'BVT.JO', 'BTI.JO', 'CCO.JO', 'DSY.JO', 'EXX.JO', 'FSR.JO', 'GRT.JO', 
+    #                  'IMP.JO', 'INP.JO', 'INL.JO', 'KIO.JO', 'LHC.JO', 'MNP.JO', 'MTN.JO', 'MCG.JO', 'NPN.JO', 'NED.JO', 'OMU.JO',
+    #                  'RNI.JO', 'REM.JO', 'CFR.JO', 'RMH.JO', 'SLM.JO', 'SOL.JO', 'SHP.JO', 'SBK.JO', 'TBS.JO', 'VOD.JO', 'WHL.JO']
+    
+    #assetNamesList = ['ABSA Group', 'African Rainbow Minerals', 'Anglo Gold Ashanti', 'Aspen Pharmacare', 'Bidvest Group',
+    #                  'British American Tobacco', 'Capital&Counties Properties', 'Discovery Holdings', 'Exxaro Resources',
+    #                  'Firstrand Ltd', 'Growthpoint Properties', 'Impala Platinum Holdings', 'Investec', 'Investec Ltd', 'Kumba Iron Ore',
+    #                  'Life Healthcare', 'Mondi Plc', 'MTN Group', 'Multichoice Group', 'Naspers Ltd', 'Nedbank Group', 'Old Mutual',
+    #                  'Reinet Investments', 'Remgro Ltd', 'Richemont DRC', 'RMB Holdings', 'Sanlam Ltd', 'Sasol Ltd', 'Shoprite Holdings',
+    #                  'Standard Bank Group', 'Tiger Brands', 'Vodacom Group', 'Woolworths Holdings', 'DTop40 Index']
+    
+    
+    #assetNamesList = ['ABG', 'ARI', 'ANG', 'APN', 'BVT', 'BTI', 'CCO', 'DSY', 'EXX', 'FSR', 'GRT', 'IMP', 'INP', 'INL', 'KIO', 'LHC', 'MNP',
+    #                  'MTN', 'MCG', 'NPN', 'NED', 'OMU', 'RNI', 'REM', 'CFR', 'RMH', 'SLM', 'SOL', 'SHP', 'SBK', 'TBS', 'VOD', 'WHL']

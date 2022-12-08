@@ -73,8 +73,20 @@ if __name__ == '__main__':
     # User to choose asset
     colc, cold, cole = st.columns([2, 3, 7])
 
-    assetCodesList = ['CL=F', 'GC=F', '^RUT', '^GSPC', 'EURUSD=X', 'GBPJPY=X', 'BTC-USD', 'ETH-USD']
-    assetNamesList = ['crudeOil', 'Gold', 'Russel2000', 'S&P500', 'EUR-USD', 'GBP-JPY', 'BTC-USD', 'ETH-USD']
+    assetCodesList = ['ABG.JO', 'ARI.JO', 'ANG.JO', 'APN.JO', 'BVT.JO', 'BTI.JO', 'CCO.JO', 'DSY.JO', 'EXX.JO', 'FSR.JO', 'GRT.JO', 
+                      'IMP.JO', 'INP.JO', 'INL.JO', 'KIO.JO', 'LHC.JO', 'MNP.JO', 'MTN.JO', 'MCG.JO', 'NPN.JO', 'NED.JO', 'OMU.JO',
+                      'RNI.JO', 'REM.JO', 'CFR.JO', 'RMH.JO', 'SLM.JO', 'SOL.JO', 'SHP.JO', 'SBK.JO', 'TBS.JO', 'VOD.JO', 'WHL.JO']
+    
+    #assetNamesList = ['ABSA Group', 'African Rainbow Minerals', 'Anglo Gold Ashanti', 'Aspen Pharmacare', 'Bidvest Group',
+    #                  'British American Tobacco', 'Capital&Counties Properties', 'Discovery Holdings', 'Exxaro Resources',
+    #                  'Firstrand Ltd', 'Growthpoint Properties', 'Impala Platinum Holdings', 'Investec', 'Investec Ltd', 'Kumba Iron Ore',
+    #                  'Life Healthcare', 'Mondi Plc', 'MTN Group', 'Multichoice Group', 'Naspers Ltd', 'Nedbank Group', 'Old Mutual',
+    #                  'Reinet Investments', 'Remgro Ltd', 'Richemont DRC', 'RMB Holdings', 'Sanlam Ltd', 'Sasol Ltd', 'Shoprite Holdings',
+    #                  'Standard Bank Group', 'Tiger Brands', 'Vodacom Group', 'Woolworths Holdings']
+    
+    
+    assetNamesList = ['ABG', 'ARI', 'ANG', 'APN', 'BVT', 'BTI', 'CCO', 'DSY', 'EXX', 'FSR', 'GRT', 'IMP', 'INP', 'INL', 'KIO', 'LHC', 'MNP',
+                      'MTN', 'MCG', 'NPN', 'NED', 'OMU', 'RNI', 'REM', 'CFR', 'RMH', 'SLM', 'SOL', 'SHP', 'SBK', 'TBS', 'VOD', 'WHL']
 
     colc.markdown('')
     colc.markdown('')
@@ -84,18 +96,9 @@ if __name__ == '__main__':
     assetCodes = assetCodesList[index]
     
     
-    if(assetNames=='BTC-USD'):
-        minValue = 36
-        maxValue = 84
-        val = 70
-    elif(assetNames=='ETH-USD'):
-        minValue = 12
-        maxValue = 60
-        val = 42
-    else:
-        minValue = 12
-        maxValue = 1260
-        val = 145
+    minValue = 12
+    maxValue = 1260
+    val = 145
         
 
     # streamlit sidebar and strategy indicator settings setup
@@ -503,6 +506,8 @@ if __name__ == '__main__':
                     newBollingerStdIndicatorName, newMACDIndicatorName, newMACDHistogramIndicatorName,
                     newMACDSignalIndicatorName)
 
+
+    #algoData = algoData.index.tz_convert(None)
 
     # Convert features into rolling z-scores
     algoData = Zscore(algoData, featuresRaw, rollingWindow)
